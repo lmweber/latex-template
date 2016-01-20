@@ -1,0 +1,214 @@
+%% Template for PhD committee report
+%% prepared by Lukas Weber, University of Zurich
+
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[margin=2.5cm]{geometry}
+%\usepackage{amsthm,amsmath}  % uncomment for math formulas
+%\usepackage{mathtools}
+
+\usepackage{natbib}  % references (use \citet{} and \citep{})
+%\usepackage[numbers]{natbib}
+\usepackage{hyperref}  % create links in PDF
+\usepackage[utf8]{inputenc}  % unicode support
+%\usepackage[applemac]{inputenc}  % Mac support if unicode package fails
+%\usepackage[latin1]{inputenc}  % Linux support if unicode package fails
+
+\usepackage{graphicx}  % better graphics package
+\usepackage[labelfont=bf,font=small]{caption}
+\setlength{\captionmargin}{20pt}
+
+\usepackage{url}  % URLs (use \url{})
+\urlstyle{rm}
+
+\usepackage{datetime}  % for custom date
+\usepackage{multicol}  % for columns format on title page
+
+\usepackage{color}
+\definecolor{linkblue}{rgb}{0.02352941176, 0.27058823529, 0.67843137254}
+\hypersetup{colorlinks=true, linkcolor=black, citecolor=linkblue, urlcolor=linkblue}  % blue links
+
+
+\title{First meeting of PhD committee: PhD research plan}
+\author{\textbf{Student name} \\
+	Institute \\
+	University of Zurich, Switzerland}
+\newdate{date}{17}{09}{2015}
+\date{\displaydate{date}}
+
+
+%% Begin document
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+\thispagestyle{empty}
+
+\vspace{1mm}
+\subsection*{Project title: ...}
+\vspace{6mm}
+\subsection*{PhD program: \\
+	\textnormal{Epidemiology and Biostatistics \\
+	Life Science Zurich Graduate School \\
+	University of Zurich}}
+\vspace{6mm}
+\subsection*{PhD start date: \textnormal{...}}
+\vspace{24mm}
+
+\subsection*{PhD committee members:}
+\begin{multicols}{2}
+	\noindent
+	\textbf{Supervisor name} \\
+	Department \\
+	University \\
+	
+	\noindent
+	\textbf{External member name} \\
+	Department \\
+	University \\
+	
+	\noindent
+	\textbf{Second member name} \\
+	Department \\
+	University \\
+	
+	\noindent
+	\textbf{Additional member name} \\
+	Department \\
+	University \\
+\end{multicols}
+
+\end{titlepage}
+
+
+\tableofcontents
+
+\newpage
+
+
+
+\section*{Summary}
+
+\label{sec:summary}  % add to contents page (without number)
+\addcontentsline{toc}{section}{\nameref{sec:summary}}
+
+
+
+
+\section{Background}
+
+
+\subsection{Subsection heading}
+
+\subsubsection*{Subsubsection heading}
+
+\subsubsection*{Subsubsection heading}
+
+
+\subsection{Subsection heading}
+
+
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[height=6.5cm]{images/filename}
+%	\caption{\textbf{Caption heading.} Caption text.}
+%	\label{fig:label_name}
+%\end{figure}
+
+
+\subsection{Subsection heading}
+
+\begin{itemize}
+\item 
+\item 
+\item 
+\end{itemize}
+
+
+
+
+\newpage
+
+\section{State of the art}
+
+
+
+
+\newpage
+
+\section{Goals of thesis}
+
+
+
+
+\newpage
+
+\section{Importance and impact}
+
+
+
+
+\newpage
+
+\section{Other projects}
+
+
+
+
+\newpage
+
+\section{Coursework and teaching activities}
+
+
+\subsection{Coursework}
+
+\def\labelitemi{--}  % dashes instead of bullet points
+
+
+\subsubsection*{Courses completed to date}
+
+\begin{itemize}
+\item
+\item
+\item
+\end{itemize}
+
+
+\subsubsection*{Planned courses}
+
+\begin{itemize}
+\item
+\item
+\item
+\end{itemize}
+
+
+
+\subsection{Teaching activities}
+
+\begin{itemize}
+\item
+\item
+\end{itemize}
+
+
+
+
+
+%% References
+
+\addcontentsline{toc}{section}{References}  % add References to table of contents
+
+\newpage
+
+\bibliographystyle{chicago}  % style file (*.bst)
+\footnotesize{
+\bibliography{references_PhD_committee_report}  % bibliography file (*.bib)
+}
+
+
+
+
+\end{document}
+
